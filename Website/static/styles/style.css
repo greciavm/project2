@@ -536,5 +536,5 @@ color: #fff;
 }
 .currency::before
 {
-    content:'$';
+    content:'₹';
 }
