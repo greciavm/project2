@@ -1,12 +1,14 @@
 ## Predatory Pricing at Amazon
 This project proposed to understand the sales and pricing behavior of health care items sold through Amazon India within the COVID-19 crisis (March 2020), using the dataset created by Tony Paul of "datahut" and published in data.world [database](https://data.world/data-hut/predatory-pricing-data-from-amazon).
 
-(static/images/home1.jpg)
+![Amazon_Coronavirus](static/images/home1.jpg)
 
 # Deployed [Predatory Princing at Amazon](http://andres.ge/tec/) page!
 
 # Background
-The original data was scraped from the India Amazon webpage by Tony Paul and published in data.world [webpage](https://data.world/data-hut/predatory-pricing-data-from-amazon). The database includes 209 items register from 108 different sellers. 
+The original data was scraped from the India Amazon webpage by Tony Paul and published in data.world [webpage](https://data.world/data-hut/predatory-pricing-data-from-amazon). The database includes 209 items register from 109 different sellers. 
+
+The data used included 9 variables: brand name, image url, mrp (maximum retail price), sale price,discount percentage, product description, number of reviews, seller name and date first available (since when this product has been on sale in Amazon) -we didn't use this variable-. 
 
 # Contents in the Repository
 * Original data
