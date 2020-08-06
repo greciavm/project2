@@ -154,49 +154,6 @@ function displayScatter(selectedSeller) {
 
 function displayProductInfo(selectedProduct) {
 
-    // fetch(url)
-    // .then(function(response) {
-    //   return response.json();
-    // })
-    // .then(function(dataInfo) {
-    //   console.log(dataInfo);
-
-    //           // Information of selected Product (row)
-    //           var FilteredInfo = dataInfo.filter(dataRow => dataRow.asin === selectedProduct); 
-
-    //           var FilteredProductInfo = [];
-    //           for (var i = 0; i < FilteredInfo.length; i++) {
-    //               prodInfo = {};
-    //               prodInfo["image_url"] = FilteredInfo[i].image_url;
-    //               prodInfo["product_description"] = FilteredInfo[i].product_description;
-    //               prodInfo["product_url"] = FilteredInfo[i].product_url;
-    //               FilteredProductInfo.push(prodInfo);
-    //           }
-      
-    //           var SelectedImage = FilteredProductInfo.map(x => x.image_url);
-    //           var SelectedProdDescr = FilteredProductInfo.map(x => x.product_description);
-    //           var SelectedProdURL = FilteredProductInfo.map(x => x.product_url);
-    //           console.log(SelectedImage)
-    //           // Show information (Product Description and Product Image)
-    //           //Description
-    //           var productDescription = d3.select("#product-description");
-    //           productDescription.html("").append("p").text(`${SelectedProdDescr}`);
-      
-    //           // Image
-    //           // document.getElementById('#product-image').src=`${SelectedImage}`
-    //           // console.log(SelectedImage)
-              
-    //           var productImage = d3.select("#product-image");
-    //           productImage.html("").append("img")
-    //           .attr("src",`${SelectedImage}`)
-    //           .style("max-height", "300px")
-    //           .style("max-width", "300px")
-    //           .attr("class", "card-img-top")
-    //           .attr("alt", "Card image cap")
-
-
-    // })
-
     d3.json(url).then((dataInfo) => {
 
         // Information of selected Product (row)
@@ -214,16 +171,14 @@ function displayProductInfo(selectedProduct) {
         var SelectedImage = FilteredProductInfo.map(x => x.image_url);
         var SelectedProdDescr = FilteredProductInfo.map(x => x.product_description);
         var SelectedProdURL = FilteredProductInfo.map(x => x.product_url);
-        console.log(SelectedImage)
+        // console.log(SelectedImage)
+
         // Show information (Product Description and Product Image)
         //Description
         var productDescription = d3.select("#product-description");
         productDescription.html("").append("p").text(`${SelectedProdDescr}`);
 
         // Image
-        // document.getElementById('#product-image').src=`${SelectedImage}`
-        // console.log(SelectedImage)
-        
         var productImage = d3.select("#product-image");
         productImage.html("").append("img")
         .attr("src",`${SelectedImage}`)
