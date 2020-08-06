@@ -71,6 +71,9 @@ def products():
         products_dict["seller_name"] = seller_name
         all_products.append(products_dict)
 
+    sellers = set(i['seller_name'] for i in all_products)
+    print(len(sellers))
+    
     return jsonify(all_products)
 
 if __name__ == '__main__':
