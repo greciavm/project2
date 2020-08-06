@@ -1,7 +1,7 @@
+![Amazon_Coronavirus](static/images/home1.jpg)
+
 ## Predatory Pricing at Amazon
 This project proposed to understand the sales and pricing behavior of health care items sold through Amazon India within the COVID-19 crisis (March 2020), using the dataset created by Tony Paul of "datahut" and published in data.world [database](https://data.world/data-hut/predatory-pricing-data-from-amazon).
-
-![Amazon_Coronavirus](static/images/home1.jpg)
 
 # Deployed [Predatory Princing at Amazon](http://andres.ge/tec/) page!
 
